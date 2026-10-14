@@ -77,12 +77,17 @@ Logged tokens by model:
 
 ## Interruptions
 
-The run recorded three interruptions.
+The run had five interruptions.
 Each one is a time a person, or the stand-in for a person, acted on the run.
 
-1. The Lead asked how to check one line of web text with no browser tool. The founder posted the fixed answer by hand, about five minutes later.
-2. The founder put the `approved` label on a pull request with a database migration by hand, before the Lead asked for it.
-3. The Lead asked for the label again, because the first label came before the migration file. The stand-in script answered and applied the label 16 seconds after the request.
+1. The Lead asked on ticket 3 how to check one line of web text with no browser tool. The founder posted the fixed answer by hand, about five minutes later.
+2. The founder put the `approved` label on ticket 3's pull request, which has a database migration, by hand, before the Lead asked for it.
+3. The Lead asked for the label on ticket 3 again, because the first label came before the migration file. The stand-in script answered and applied the label 16 seconds after the request.
+4. The Lead blocked ticket 4 and asked for the `approved` label. The stand-in script answered and applied the label.
+5. The Lead asked on ticket 6 which of two orders to use. The stand-in script gave the fixed answer.
+
+The run record counts all five.
+The hand-written list of interruptions kept during the run stopped after the third, so it undercounted.
 
 One more act is not counted: the first version of the stand-in script took a Lead comment that only mentioned the founder for a question, and posted the fixed answer a second time.
 The rule was tightened afterwards.

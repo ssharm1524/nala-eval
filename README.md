@@ -1,6 +1,7 @@
 # nala-eval
 
 A contamination-controlled replay eval for coding-agent designs.
+The write-up of the method and the first pilot is at https://shivsharma.me/blog/nala-evals/.
 
 It answers one question: given the same batch of real tickets, which agent design turns them into correct merged code, and at what cost in dollars and wall time?
 It was built to compare two versions of Nala, an agent system that drives Claude Code sessions through tickets.
