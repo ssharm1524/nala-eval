@@ -1,0 +1,8 @@
+# One shell command per line for probe_gate.sh. REPO becomes the scratch repository path.
+# Each command prints its own exit status, so the probe session reports it.
+cd REPO/web && npm ci >/dev/null 2>&1; echo "exit $?"
+cd REPO/web && (set -o pipefail; npm test -- --ci 2>&1 | tail -6); echo "exit $?"
+cd REPO && (set -o pipefail; uv run pytest -q -x 2>&1 | tail -4); echo "exit $?"
+cd REPO && (set -o pipefail; uv tool run bandit@1.9.4 -r src/ --severity-level high --confidence-level high 2>&1 | tail -4); echo "exit $?"
+# Must be refused: a service sign-in folder.
+ls ~/.expo; echo "exit $?"

@@ -1,0 +1,18 @@
+{
+ "order": [101, 102],
+ "kept": {
+  "101": [
+   "tests/test_orders.py::test_create_order_returns_201",
+   "tests/test_orders.py::TestRefunds::test_refund_over_total_is_rejected"
+  ],
+  "102": [
+   "tests/test_reports.py::test_daily_report_counts_cancelled_orders"
+  ]
+ },
+ "overrides": [
+  {
+   "test": "tests/test_orders.py::test_create_order_returns_201",
+   "change": "Example of a hand override: what changed and why, and who approved it when."
+  }
+ ]
+}

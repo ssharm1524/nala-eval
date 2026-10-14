@@ -1,0 +1,10 @@
+# Private to one study: settings that name the source project, and everything copied from it.
+eval/config.env
+eval/hidden-tests/files/
+eval/hidden-tests/kept-frozen.json
+eval/hidden-tests/candidate-files.txt
+eval/hidden-tests/verdicts/
+eval/tickets/
+versions/
+results/
+__pycache__/
